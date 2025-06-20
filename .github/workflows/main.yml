@@ -6,8 +6,12 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: MystenLabs/walrus-sites/.github/actions/publish@SEW-154-add-gh-action-to-publish
+      - name: deploy site 
+        uses: MystenLabs/walrus-sites/.github/actions/publish@SEW-154-add-gh-action-to-publish
         with:
           SUI_ADDRESS: ${{ vars.SUI_ADDRESS }}
           SUI_KEYSTORE: ${{ secrets.SUI_KEYSTORE }}
           WALRUS_CONFIG: ${{ vars.WALRUS_CONFIG }}
+          CONTEXT: 'mainnet'
+          EPOCHS: 1
+          
