@@ -13,6 +13,5 @@ jobs:
           SUI_KEYSTORE: ${{ secrets.SUI_KEYSTORE }}
           WALRUS_CONFIG: ${{ vars.WALRUS_CONFIG }}
           SITE_FOLDER: my-walrus-site
-          CONTEXT: 'mainnet'
           EPOCHS: 1
           
