@@ -1,3 +1,4 @@
+name: publish site
 on:
   workflow_dispatch:
 
