@@ -12,6 +12,7 @@ jobs:
           SUI_ADDRESS: ${{ vars.SUI_ADDRESS }}
           SUI_KEYSTORE: ${{ secrets.SUI_KEYSTORE }}
           WALRUS_CONFIG: ${{ vars.WALRUS_CONFIG }}
+          SITE_PATH: my-walrus-site/dist
           CONTEXT: 'mainnet'
           EPOCHS: 1
           
