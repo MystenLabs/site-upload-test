@@ -1,0 +1,12 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: MystenLabs/walrus-sites@SEW-154-add-gh-action-to-publish/.github/actions/publish
+        with:
+          SUI_ADDRESS: ${{ secrets.SUI_ADDRESS }}
+          SUI_KEYSTORE: ${{ secrets.SUI_KEYSTORE }}
+          WALRUS_CONFIG: ${{ secrets.WALRUS_CONFIG }}
